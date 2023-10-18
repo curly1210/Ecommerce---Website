@@ -1,5 +1,5 @@
 .header {
-  background:linear-gradient(#fff, #ffd6d6);
+  background: linear-gradient(#fff, #ffd6d6);
 }
 
 .container {
@@ -63,12 +63,12 @@
 .introduce h1 {
   font-size: 3rem;
   line-height: 3.5rem;
-  margin-bottom: 2.6rem ;
+  margin-bottom: 2.6rem;
 }
 
 .introduce p {
   color: #555;
-  margin-bottom:2.6rem ;
+  margin-bottom: 2.6rem;
 }
 
 .introduce button {
@@ -79,8 +79,12 @@
   border-radius: 30px;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
 
+.introduce button:hover {
+  background-color: #563434;
+}
 
 .banner img {
   max-width: 50%;
