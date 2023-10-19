@@ -3,16 +3,41 @@
   align-items: center;
   justify-content: center;
   background: radial-gradient(#fff, #ffd6d6);
-  padding: 4rem;
+  padding: 6rem;
 }
 
 .picture-offer {
-  flex-basis: 28%;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: end;
+  padding-right: 2rem;
 }
 
 .offer img {
-  width: 100%;
+  min-width: 350px;
+  width: 60%;
   display: block;
+  justify-content: center;
 }
+
 .info {
+  flex-basis: 50%;
+  /* max-width: 400px; */
+}
+
+.info-container {
+  max-width: 85%;
+}
+
+.info h1 {
+  font-size: 3.3rem;
+  margin: 2rem 0;
+}
+
+.info p {
+  color: #555;
+}
+
+.description {
+  margin-bottom: 2rem;
 }
