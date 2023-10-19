@@ -45,7 +45,7 @@
   transform: translateX(-50%);
 }
 
-h4 {
+.row h4 {
   color: #555;
   font-weight: normal;
   margin-top: 0.5rem;
