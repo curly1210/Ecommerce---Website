@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>RedStore</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/header.css" />
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="/styles/review.css" />
     <link rel="stylesheet" href="/styles/brands.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/media-query.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -33,15 +36,20 @@
       <div class="container">
         <div class="navigation">
           <img class="logo" src="/images/Logo/logo.png" alt="" />
-          <div>
-            <ul>
+          <div class="navi-list">
+            <ul id="MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="">Account</a></li>
-              <img class="cart" src="/images/Logo/cart.png" />
             </ul>
+            <img class="cart" src="/images/Logo/cart.png" />
+            <img
+              class="menu-icon"
+              src="/images/Logo/menu.png"
+              onclick="menutoggle()"
+            />
           </div>
         </div>
 
@@ -228,17 +236,15 @@
       <div class="picture-offer">
         <img src="/images/Products/exclusive.png" />
       </div>
-      <div class="info">
-        <div class="info-container">
-          <p>Exclusively Available on RedStore</p>
-          <h1>Smart Band 4</h1>
-          <p class="description">
-            The Mi Smart Band 4 featured a 39.9% larger (than Mi Band 3) AMOLED
-            color full-touch display with adjustable brightness, so everything
-            is clear as can be
-          </p>
-          <button class="btn">Buy now &#8594;</button>
-        </div>
+      <div class="info-container">
+        <p>Exclusively Available on RedStore</p>
+        <h1>Smart Band 4</h1>
+        <p class="description">
+          The Mi Smart Band 4 featured a 39.9% larger (than Mi Band 3) AMOLED
+          color full-touch display with adjustable brightness, so everything is
+          clear as can be
+        </p>
+        <button class="btn">Buy now &#8594;</button>
       </div>
     </div>
 
@@ -354,5 +360,20 @@
       <!-- <hr /> -->
       <p class="copyright">Copyright 2020 - CuongCurly</p>
     </div>
+
+    <!-- Js for  toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "300px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

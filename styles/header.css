@@ -1,5 +1,6 @@
 .header {
   background: radial-gradient(#fff, #ffd6d6);
+  position: relative;
 }
 
 .container {
@@ -14,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: relative; */
 }
 
 .logo {
@@ -40,8 +42,15 @@
 
 .cart {
   width: 2rem;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
   cursor: pointer;
+  display: block;
+}
+
+.navi-list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 /* Banner */
@@ -50,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* flex-wrap: nowrap; */
   margin: 7rem 0;
   padding-bottom: 1rem;
 }
@@ -87,6 +97,7 @@
 }
 
 .banner img {
+  min-width: 300px;
   max-width: 50%;
   display: inline-block;
 }

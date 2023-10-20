@@ -13,28 +13,26 @@
   padding-right: 2rem;
 }
 
+.info-container {
+  flex-basis: 50%;
+  /* max-width: 50%; */
+  /* padding-right: 15rem; */
+}
+
 .offer img {
   min-width: 350px;
-  width: 60%;
+  width: 55%;
   display: block;
-  justify-content: center;
+  justify-content: center;/
 }
 
-.info {
-  flex-basis: 50%;
-  /* max-width: 400px; */
-}
 
-.info-container {
-  max-width: 85%;
-}
-
-.info h1 {
+.info-container h1 {
   font-size: 3.3rem;
   margin: 2rem 0;
 }
 
-.info p {
+.info-container p {
   color: #555;
 }
 
